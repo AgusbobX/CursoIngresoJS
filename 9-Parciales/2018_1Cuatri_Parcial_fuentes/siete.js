@@ -13,7 +13,7 @@ var nota;
 		contador++;
 		nota = prompt("Ingresar nota del alumno "+contador);
 		nota = parseInt(nota);
-		while(nota<0 || nota>10)
+		while(nota<0 || nota>10 || isNaN(nota) == true)
 		{
 			nota = prompt("Reingrese la nota entre 0 y 10 para el alumno "+contador);
 			nota = parseInt(nota);
